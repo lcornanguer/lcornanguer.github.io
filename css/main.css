@@ -1,5 +1,12 @@
-
-.body {
+body {
   color: #e4e6cf;
   background-color: #e4e6cf;
+}
+
+h1, h2 {
+  color: #44594c;
+}
+
+h1 {
+  font-size: 35px;
 }
