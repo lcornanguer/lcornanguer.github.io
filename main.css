@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+} 
+
+.emph {
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*BAR DE NAVIGATION*/
+.menubar {
+	height: 110px;
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 10px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+.myname {
+	padding-left: 15px;
+	width: 40%;
+	color: white;
+	font-size: 55px;
+	font-family: 'Inconsolata', sans-serif;
+	display : flex;
+	/*text-transform: uppercase;*/
+}
+
+.firstname {
+	font-weight: 200;
+}
+
+.lastname {
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+.navbar {
+	width: 60%;
+	/*background-color: #ed4e4e;*/
+	background-color: #29588a;
+	font-family: 'Inconsolata', sans-serif;
+	font-size: 24px;
+	line-height: 82px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar ul li a:hover {
+  /*background-color: #111;*/
+  background-color: #87add6;
+  color: #333;
+}
+
+/* BLOCKS */
+.mainflux {
+	margin: 150px 80px 30px 80px;
+/*	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;*/
+	/*font-family: 'Monserrat', sans-serif;*/
+}
+
+.bigblock {
+	border-radius: 20px;
+	background-color: #f0f0f0;
+	padding: 15px 25px;
+	margin-top: 30px;
+	line-height: 1.75;
+}
+
+.bigblock h1 {
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	padding-top: 140px; margin-top: -140px;
+	line-height: normal;
+}
+
+.highlight {
+	display: inline-block;
+	background-color: #e8eb6a;
+	line-height: 0.2em;
+  padding-bottom: 0.4em;
+  padding-right: 0.3em;
+}
+
+.nohighlight {
+	display: inherit;
+	background-color: inherit;
+	line-height: inherit;
+  padding-bottom: inherit;
+  padding-right: inherit;
+}
+
+/* PUBLICATIONS */
+.button {
+  background-color: #bccfe3; 
+  border: none;
+  color: #333;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover{
+  background-color: #29588a;
+  color: white;
+}
+
+.publi h2 {
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 0px !important;
+}
+
+.conf-link {
+	text-decoration: none;
+	color: #29588a;
+}
+
+.clickable-text {
+	/*font-weight: 500;*/
+	color: #29588a;
+}
+
+.clickable-text:hover {
+	cursor: pointer;
+}
+
+.clickable-text:active {
+	color: #333;
+}
+
+.icons {
+	height: 18px;
+	margin: 5px 5px;
+}
+
+.icons:hover{
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(175deg) brightness(65%) contrast(119%);
+  cursor: pointer;
+}
+
+.tooltip {
+  position:relative; 
+}
+
+.tooltip:before {
+	opacity: 75%;
+	content: attr(data-text);
+	position:absolute;
+	top: 225%;
+	transform:translateY(-50%);
+	left:25%;
+	margin-left:px;
+  padding:5px;
+  border-radius:10px;
+  background:#808080;
+  color: #fff;
+  text-align:center;
+  display:none;
+}
+
+.tooltip:hover:before {
+  display:block;
+}
+
+/* CURRICULUM */
+.xp-type {
+	font-weight: 500;
+	font-size: 16px;
+	/*margin-bottom: 0px !important;*/
+}
+
+.xp-type ul {
+	list-style-type: circle;
+}
+
+/* INFO BAR */
+.footer-basic {
+	font-size: 13px;
+  padding:12px 50px;
+  background-color:#333;
+  color: white;
+  left: 0;
+  margin-left: 0px;
+  width: 100%;
+}
+
+footer div p a {
+	color: #ccdbe8;
+  text-decoration: none;
+}
+
+#linkedin-icon, #copy-icon {
+	position: relative;
+  bottom: -6px;
+}
+
+#linkedin-icon:hover {
+	filter: brightness(65%);
+}
+
+
+#photo-block {
+	display: block;
+	width: 11%;
+	text-align: center;
+	margin: auto 0;
+}
+
+#aboutme-text-block {
+	width: 78%;
+	text-align: center;
+}
+
+#aboutmeblock {
+	vertical-align: middle;
+}
+/*
+.bigblock h1 {
+	text-align: center;
+}
+*/
+
+#photo-perso {
+	max-width: 100%;
+	max-height: 100%;
+	/*height: 175px;*/
+}
