@@ -77,3 +77,8 @@ function copyMail(){
         console.log('Unable to copy.');
     }
 }
+
+citation(){
+	alert("No citation currently available.");
+}
+
