@@ -78,7 +78,6 @@ function copyMail(){
     }
 }
 
-citation(){
+function citation(){
 	alert("No citation currently available.");
 }
-
