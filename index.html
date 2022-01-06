@@ -47,40 +47,69 @@
   		<div class="bigblock">
   			<h1 id="publications"><span class='nohighlight'>Publications</span></h1>
   			
+			<!-- AAAI-22 -->
+  			<div class="publi">
+  				<h2>TAG: Learning Timed Automata from Logs</h2>  
+  				Lénaïg Cornanguer, Christine Largouët, Laurence Rozé, Alexandre Termier, 2022<br>
+  				<a href="https://aaai.org/Conferences/AAAI-22/" class="conf-link" target="_blank">AAAI-22 (rank A conference)</a> 
+				<div class="buttons-zone">
+					<span data-text="Abstract" class="tooltip">
+						<img src="media/exclamation.svg" alt="Abstract" onclick="toggleText(aaai22);" class="icons">
+					</span>
+<!-- 					<span data-text="PDF" class="tooltip">
+						<a href="https://hal.inria.fr/hal-03201649/document" target="_blank">
+							<img src="media/pdf.svg" alt="Abstract" class="icons">
+						</a>
+					</span>
+					<span data-text="Cite" class="tooltip">
+						<img src="media/citation.svg" alt="Abstract" class="icons" onclick="citation()">
+					</span>
+					<span data-text="Link" class="tooltip">
+						<a href="https://hal.inria.fr/hal-03201649" target="_blank">
+							<img src="media/lien.svg" alt="Abstract" class="icons">
+						</a>
+					</span> -->
+				</div>
+				<div id='aaai22' style='display: none' class="abstract">
+					Event logs are often one of the main sources of information to understand the behavior of a system. While numerous approaches have extracted partial information from event logs, in this work, we aim at inferring a global model of a system from its event logs.
+					We consider real-time systems, which can be modeled with Timed Automata: our approach is thus a Timed Automata learner. There is a handful of related work, however, they might require a lot of parameters or produce Timed Automata that either are undeterministic or lack precision. In contrast, our proposed approach, called TAG, requires only one parameter and learns a deterministic Timed Automaton having a good tradeoff between accuracy and complexity of the automata. This allows getting an interpretable and accurate global model of the real-time system considered. Our experiments compare our approach to the related work and demonstrate its merits.
+				</div>
+			</div>
+
   			<!-- AAAI-21 -->
   			<div class="publi">
   				<h2>Passive Learning of Timed Automata from Logs (Student Abstract)</h2>  
   				Lénaïg Cornanguer, 2021<br>
-  				<a href="https://aaai.org/Conferences/AAAI-21/" class="conf-link" target="_blank">AAAI-21</a> 
+  				<a href="https://aaai.org/Conferences/AAAI-21/" class="conf-link" target="_blank">AAAI-21 (rank A conference)</a> 
   				Finalist of the Three-Minute Presentation Contest (<span class="clickable-text" onclick="toogleVideo(aaai21video, videoaaai21);">video</span>). <br>
   				<div id='aaai21video' style='display: none'>
 	  				<video id='videoaaai21' width="320" height="240" muted controls>
 					  <source src="media/AAAI_3m.mp4" type="video/mp4">
 					  	Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="buttons-zone">
-						<span data-text="Abstract" class="tooltip">
-							<img src="media/exclamation.svg" alt="Abstract" onclick="toggleText(aaai21);" class="icons">
-						</span>
-						<span data-text="PDF" class="tooltip">
-							<a href="https://hal.inria.fr/hal-03201649/document" target="_blank">
-								<img src="media/pdf.svg" alt="Abstract" class="icons">
-							</a>
-						</span>
-						<span data-text="Cite" class="tooltip">
-							<img src="media/citation.svg" alt="Abstract" class="icons" onclick="citation()">
-						</span>
-						<span data-text="Link" class="tooltip">
-							<a href="https://hal.inria.fr/hal-03201649" target="_blank">
-								<img src="media/lien.svg" alt="Abstract" class="icons">
-							</a>
-						</span>
-					</div>
-					<div id='aaai21' style='display: none' class="abstract">
-						We propose a novel algorithm to passively learn deterministic Timed Automata from events sequences associated with the delay occurring between them. This algorithm produces models that are more specific than State-of-the-Art algorithms and that has a better identification of the temporal constraints applying on the systems.
-					</div>
+					</video>
 				</div>
+				<div class="buttons-zone">
+					<span data-text="Abstract" class="tooltip">
+						<img src="media/exclamation.svg" alt="Abstract" onclick="toggleText(aaai21);" class="icons">
+					</span>
+					<span data-text="PDF" class="tooltip">
+						<a href="https://hal.inria.fr/hal-03201649/document" target="_blank">
+							<img src="media/pdf.svg" alt="Abstract" class="icons">
+						</a>
+					</span>
+					<span data-text="Cite" class="tooltip">
+						<img src="media/citation.svg" alt="Abstract" class="icons" onclick="citation()">
+					</span>
+					<span data-text="Link" class="tooltip">
+						<a href="https://hal.inria.fr/hal-03201649" target="_blank">
+							<img src="media/lien.svg" alt="Abstract" class="icons">
+						</a>
+					</span>
+				</div>
+				<div id='aaai21' style='display: none' class="abstract">
+					We propose a novel algorithm to passively learn deterministic Timed Automata from events sequences associated with the delay occurring between them. This algorithm produces models that are more specific than State-of-the-Art algorithms and that has a better identification of the temporal constraints applying on the systems.
+				</div>
+			</div>
 
 				<!-- OTHER -->
 <!-- 				<div class="publi">
