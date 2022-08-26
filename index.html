@@ -1,166 +1,250 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="/main.css" rel="stylesheet">
-    <script src="scripts/main.js"></script>
-    <meta Charset="utf-8">
-    <title>Lenaïg Cornanguer, PhD student</title>
-  </head>
-  <body>
-  	<div class="menubar">
-			<div class="myname">
-				<div class="firstname">Lénaïg</div>
-				<div class="lastname">Cornanguer</div>
-			</div>
+<html lang="en">
+<head>
+    <title>Bootstrap Portfolio/Resume Theme for Developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
-			<div class="navbar">
-				<ul>
-					<li><a href="#aboutme" onmouseover="highlight('aboutme');" onmouseout="highlight('aboutme', false);">About me</a></li>
-					<li><a href="#publications" onmouseover="highlight('publications');" onmouseout="highlight('publications', false);">Publications</a></li>
-					<li><a href="#curriculum" onmouseover="highlight('curriculum');" onmouseout="highlight('curriculum', false);">Curriculum</a></li>
-				</ul>
-			</div>
-  	</div>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
-  	<div class="mainflux">
-  		<div class="bigblock" id="aboutmeblock" style="display: flex;"><!--  style="text-align: center;"> -->
-  			<!-- <h1 id="aboutme"><mark>About me</mark></h1> -->
-  			<div id="photo-block">
-  				<img src="media/nobody.jpg" id="photo-perso">
-  			</div>
-				<div id="aboutme-text-block">
-					<h1 id="aboutme"><span class='nohighlight'>About me</span></h1>
-	  			<p>Engineer in Data Science, I am now a PhD Student specialized in <span class="emph">Machine Learning</span> and <span class="emph">Time Series processing</span>.</p>
-	  			<p>My work aims to develop a method to learn the <span class="emph">global model of functionning of a system</span> from its <span class="emph">logs or sensor data</span> using <span class="emph">Timed Automata</span>.</p>
-	  			<p>My PhD takes place in the <a href="https://team.inria.fr/lacodam/fr/" class="conf-link" target="_blank">LACODAM team</a> in the <a href="https://inria.fr/fr" class="conf-link" target="_blank">Inria</a> lab of Rennes.</p>
-	  			<p>You can contact me by email
-					<span data-text="Copy adress" class="tooltip" style=" display: inline">
-						<img src="media/carres.svg" alt="Copy" class="icons" id="copy-icon" onclick="copyMail()" style=" display: inline-block;">
-					</span> 
-					or via Linkedin
-					<a href="https://www.linkedin.com/in/lenaig-cornanguer/en">
-						<img src="media/in.png" alt="Copy" class="icons" id="linkedin-icon" style=" display: inline-block;">
-					</a>.</p>
-				</div>
-  		</div>
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start" src="assets/images/photo.jpg" alt="profile image" />
+		            <div class="profile-content">
+		                <h1 class="name">Lénaïg Cornanguer</h1>
+                        <h2 class="desc">Inria, CNRS, Univ Rennes, IRISA</h2>   
+		                <h2 class="desc">PhD Student in Artificial Intelligence</h2>   
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+                    <p>Last update: 26/09/2022</p>
+<!-- 	                <a class="btn btn-cta-primary" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>         -->
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm"> <!-- rounded"> -->
+                        <h2 class="heading"><i class="fas fa-user"></i> About Me</h2>
+                        <div class="content">
+                            <p>Engineer in Data Science, I am currently doing a PhD in <b> Machine Learning</b> and <b>Time Series processing</b>. <br>
+                            My work aims to develop a method to learn the <b>global model of functionning of a system</b> from its <b>logs or sensor data</b>, using <b>Timed Automata</b>. <br>
+                            My PhD takes place in the <a href="https://team.inria.fr/lacodam/fr/" class="conf-link" target="_blank">LACODAM team</a> in the <a href="https://inria.fr/fr" class="conf-link" target="_blank">Inria</a> lab of Rennes.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm "> <!-- rounded"> -->
+                        <h2 class="heading"><i class="fas fa-book-open"></i> Publications</h2>
+                        <div class="content">    
 
-  		<div class="bigblock">
-  			<h1 id="publications"><span class='nohighlight'>Publications</span></h1>
-  			
-			<!-- AAAI-22 -->
-  			<div class="publi">
-  				<h2>TAG: Learning Timed Automata from Logs</h2>  
-  				Lénaïg Cornanguer, Christine Largouët, Laurence Rozé, Alexandre Termier, 2022<br>
-  				<a href="https://aaai.org/Conferences/AAAI-22/" class="conf-link" target="_blank">AAAI-22 (rank A* conference)</a> 
-				<div class="buttons-zone">
-					<span data-text="Abstract" class="tooltip">
-						<img src="media/exclamation.svg" alt="Abstract" onclick="toggleText(aaai22);" class="icons">
-					</span>
-<!-- 					<span data-text="PDF" class="tooltip">
-						<a href="https://hal.inria.fr/hal-03201649/document" target="_blank">
-							<img src="media/pdf.svg" alt="Abstract" class="icons">
-						</a>
-					</span>
-					<span data-text="Cite" class="tooltip">
-						<img src="media/citation.svg" alt="Abstract" class="icons" onclick="citation()">
-					</span>
-					<span data-text="Link" class="tooltip">
-						<a href="https://hal.inria.fr/hal-03201649" target="_blank">
-							<img src="media/lien.svg" alt="Abstract" class="icons">
-						</a>
-					</span> -->
-				</div>
-				<div id='aaai22' style='display: none' class="abstract">
-					Event logs are often one of the main sources of information to understand the behavior of a system. While numerous approaches have extracted partial information from event logs, in this work, we aim at inferring a global model of a system from its event logs.
-					We consider real-time systems, which can be modeled with Timed Automata: our approach is thus a Timed Automata learner. There is a handful of related work, however, they might require a lot of parameters or produce Timed Automata that either are undeterministic or lack precision. In contrast, our proposed approach, called TAG, requires only one parameter and learns a deterministic Timed Automaton having a good tradeoff between accuracy and complexity of the automata. This allows getting an interpretable and accurate global model of the real-time system considered. Our experiments compare our approach to the related work and demonstrate its merits.
-				</div>
-			</div>
+                            <div class="publi">                          
+                                <h3 class="publi_title">
+                                    TAG: Learning Timed Automata from Logs
+                                    <span class="tags"><p>Conference</p></span>
+                                </h3>
+                                <span class="publi_authors">Lénaïg Cornanguer, Christine Largouët, Laurence Rozé, Alexandre Termier</span>
+                                <span class="publi_year">2022</span>
+                                <span class="publi_conf">AAAI-22 (rank A* conference)</span>
+                            </div><!--//desc-->         
+                            <div class="publi">                          
+                                <h3 class="publi_title">
+                                    Passive Learning of Timed Automata from Logs (Student Abstract)
+                                    <span class="tags"><p>Conference</p></span>
+                                </h3>
+                                <span class="publi_authors">Lénaïg Cornanguer</span>
+                                <span class="publi_year">2021</span>
+                                <span class="publi_conf">AAAI-21 (rank A* conference)</span>
+                            </div><!--//desc-->         
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner shadow-sm "> <!-- rounded"> -->
+                        <h2 class="heading"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
+                        <div class="content">
+                            <div class="teaching_item">
+                                <h3 class="teaching_title">Artificial Intelligence (M1 Info Ingéniérie Logicielle / M1 Software engineering)</h3>
+                                <div class="teaching_location">Université de Rennes 1</div>
+                                <div class="teaching_date">2021-2022</div>
+                                <div class="teaching_type">TD (tutorials)</div>
+                            </div><!--//item-->
+                            <div class="teaching_item">
+                                <h3 class="teaching_title">Oriented-Object Programming (L2 Maths)</h3>
+                                <div class="teaching_location">Université de Rennes 1</div>
+                                <div class="teaching_date">2020-2021</div>
+                                <div class="teaching_type">TP (tutorials)</div>
+                            </div><!--//item-->
+                            <div class="teaching_item">
+                                <h3 class="teaching_title">Introduction to programming in Java (L1 Info / L1 Computer Science)</h3>
+                                <div class="teaching_location">Université de Rennes 1</div>
+                                <div class="teaching_date">2020-2022</div>
+                                <div class="teaching_type">TD and TP (tutorials)</div>
+                            </div><!--//item-->
+                            <div class="teaching_item">
+                                <h3 class="teaching_title">Database Management System (L2 Ingénieur Agroalimentaire / L2 Food science)</h3>
+                                <div class="teaching_location">Institut Agro Rennes</div>
+                                <div class="teaching_date">2022-2023</div>
+                                <div class="teaching_type">CM and TD (lecture & tutorials)</div>
+                            </div><!--//item-->
 
-  			<!-- AAAI-21 -->
-  			<div class="publi">
-  				<h2>Passive Learning of Timed Automata from Logs (Student Abstract)</h2>  
-  				Lénaïg Cornanguer, 2021<br>
-  				<a href="https://aaai.org/Conferences/AAAI-21/" class="conf-link" target="_blank">AAAI-21 (rank A* conference)</a> <br>
-  				Finalist of the Three-Minute Presentation Contest (<span class="clickable-text" onclick="toogleVideo(aaai21video, videoaaai21);">video</span>). <br>
-  				<div id='aaai21video' style='display: none'>
-	  				<video id='videoaaai21' width="320" height="240" muted controls>
-					  <source src="media/AAAI_3m.mp4" type="video/mp4">
-					  	Your browser does not support the video tag.
-					</video>
-				</div>
-				<div class="buttons-zone">
-					<span data-text="Abstract" class="tooltip">
-						<img src="media/exclamation.svg" alt="Abstract" onclick="toggleText(aaai21);" class="icons">
-					</span>
-					<span data-text="PDF" class="tooltip">
-						<a href="https://hal.inria.fr/hal-03201649/document" target="_blank">
-							<img src="media/pdf.svg" alt="Abstract" class="icons">
-						</a>
-					</span>
-					<span data-text="Cite" class="tooltip">
-						<img src="media/citation.svg" alt="Abstract" class="icons" onclick="citation()">
-					</span>
-					<span data-text="Link" class="tooltip">
-						<a href="https://hal.inria.fr/hal-03201649" target="_blank">
-							<img src="media/lien.svg" alt="Abstract" class="icons">
-						</a>
-					</span>
-				</div>
-				<div id='aaai21' style='display: none' class="abstract">
-					We propose a novel algorithm to passively learn deterministic Timed Automata from events sequences associated with the delay occurring between them. This algorithm produces models that are more specific than State-of-the-Art algorithms and that has a better identification of the temporal constraints applying on the systems.
-				</div>
-			</div>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm "> <!-- rounded"> -->
+                        <h2 class="heading"><i class="fas fa-briefcase"></i> Work Experience</h2>
+                        <div class="content">
+                            <!-- <h3>Computer science related</h3> -->
 
-				<!-- OTHER -->
-<!-- 				<div class="publi">
-  			  <h2>Lorem ipsum</h2>  
-  			  <button class='button' onclick="toggleText(lorem21);">Abstract</button>
-					<p id='lorem21' style='display: none' class="abstract">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet vitae leo eget tempor. Nulla lectus velit, dignissim at ipsum sed, rutrum interdum nisl. Morbi quis lectus lobortis ligula placerat tristique ac at enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sed pellentesque magna. Praesent lobortis interdum erat non dignissim. Vestibulum commodo ligula tellus, eu faucibus nunc blandit ut. Sed quis molestie dolor. Nam gravida nisl id nisl tincidunt varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
-  			</div> -->
-  		</div>
+                            <div class="work_item">
+                                <h3 class="work_title">DBMS trainee - <span class="place"><a href="#">Quescrem, Lugo (SPAIN)</a></span> <span class="year">2019 (2 months)</span></h3>
+                                <p>Database creation for production & Access interface creation</p>
+                            </div><!--//item-->
+                            <div class="work_item">
+                                <h3 class="work_title">Continual improvement trainee - <span class="place"><a href="#">Quescrem, Lugo (SPAIN)</a></span> <span class="year">2019 (6 months)</span></h3>
+                                <p>Continual improvement of the production in food industry (reports automatization, performance indicators establishment, procedure redaction...) </p>
+                            </div><!--//item-->
+                            <div class="work_item">
+                                <h3 class="work_title">Research and Development trainee - <span class="place"><a href="#">Tipiak Épicerie, Saint-Aignan de Grand-Lieu (FRANCE)</a></span> <span class="year">2017 (6 months)</span></h3>
+                                <p>R&D in food industry (organization and analysis of sensory tests, formulation, physico-chemical analyzes...)</p>
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
 
-  		<div class="bigblock">
-  			<h1 id="curriculum"><span class='nohighlight'>Curriculum</span></h1>
-  			
-  			<h2 class="xp-type">Education</h2>
-  			<ul>
-  				<li>PhD thesis: Learning Timed Automata from Time Series (Inria, Rennes, France) </li>
-  				<li>Data Science master's degree (Agrocampus Ouest, Rennes, France)</li>
-  				<li>Bachelor's degree in Food Science (Agrocampus Ouest, Rennes, France)</li>
-  			</ul>
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm "> <!-- rounded"> -->
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Rennes, FRANCE</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span>lenaig.cornanguer[at]irisa.fr</li>
+                                <li><i class="fab fa-linkedin-in"></i><span class="sr-only">Website:</span><a href="https://www.linkedin.com/in/lenaig-cornanguer/en">https://www.linkedin.com/in/lenaig-cornanguer/en</a></li>
+                                <li><i class="fab fa-github"></i><span class="sr-only">Github:</span><a href="https://github.com/lcornanguer">https://github.com/lcornanguer</a></li>
+                                <li><i class="fab fa-gitlab"></i><span class="sr-only">Github:</span><a href="https://gitlab.inria.fr/lcornang">https://gitlab.inria.fr/lcornang</a> </li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm "> <!-- rounded"> -->
+                        <h2 class="heading"><i class="fas fa-user-graduate"></i> Education</h2>
+                        <div class="content">
+                            <div class="edu_item">
+                                 <h3 class="edu_title">PhD Student in Artificial Intelligence</h3>
+                                 <div class="edu_location">IRISA, Rennes (FRANCE)</div>
+                                 <div class="edu_dates">oct. 2020 - now</div>
+                                 <div class="edu_description">
+                                     <p><b>Thesis subject:</b> Machine Learning of Timed Automata from Time Series</br>
+                                     <b>Supervisors:</b> Christine Largouët, Alexandre Termier, Laurence Rozé</p>
+                                 </div>
+                            </div>     
 
-  			<h2 class="xp-type">Professional experience</h2>
-  			<ul>
-  				<li>Teaching assistantship (Rennes 1 University, Rennes, France)</li>
-  				<li>ML research (Inria, Rennes, France)</li>
-  				<li>Classification and prediction of job offers (Ouest France, Rennes, France)</li>
-  				<li>Database & Access interface creation (Quescrem, Lugo, Spain)</li>
-  				<li>Continual improvement (Quescrem, Lugo, Spain)</li>
-  				<li>Product development and sensory analysis (Tipiak Epicerie, Saint-Aignan de Grand-Lieu, France)</li>
-  			</ul>
-			
-			<h2 class="xp-type">Teaching</h2>
-  			<ul>
-  				<li>Introduction to imperative programming in Java (L1) (Rennes 1 University, Rennes, France)</li>
-  				<li>Object Oriented Programming in Java (L2) (Rennes 1 University, Rennes, France)</li>
-				<li>Artificial Intelligence (M1) (Rennes 1 University, Rennes, France)</li>
-  			</ul>
+                            <div class="edu_item">
+                                 <h3 class="edu_title">Data Science master's degree</h3>
+                                 <div class="edu_location">Institut Agro, Rennes (FRANCE)</div>
+                                 <div class="edu_dates">2018 - 2020</div>
+                            </div>
+                            <div class="edu_item">
+                                 <h3 class="edu_title">Bachelor's degree in food science</h3>
+                                 <div class="edu_location">Institut Agro, Rennes (FRANCE)</div>
+                                 <div class="edu_dates">2015 - 2017</div>
+                            </div>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                                      
+                <aside class="other responsabilities aside section">
+                    <div class="section-inner shadow-sm "> <!-- rounded"> -->
+                        <h2 class="heading"><i class="fas fa-clipboard-list"></i> Other activities and responsabilities</h2>
+                        <div class="content">
+                            <div class="charge_item">
+                                <h3 class="charge_title">Elected member of the laboratory council of IRISA (2022-now)</h3>
+                            </div>
+                            <div class="charge_item">
+                                <h3 class="charge_title">LCodentLCréent Rennes (2020-now)</h3>
+                                <div class="charge_description">Scientific mediation for middle school girls (Creative coding courses in Python, flyers realization)</div>
+                            </div>
+                            <div class="charge_item">
+                                <h3 class="charge_title">Participation at the organization of IDA-22 conference</h3>
+                            </div>
+                            <div class="charge_item">
+                                <h3 class="charge_title">Participation at the organization of AiML+LAMAS&SR-22 conference</h3>
+                            </div>
 
-  		</div>
-    </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> </br>
+                <small class="credits"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> - <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> - <a href="https://github.com/sdepold/vanilla-rss" target="_blank">Vanilla RSS</a> - <a href="https://github.com/coliff/dark-mode-switch">Dark Mode Switch</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
 
-    <div class="footer-basic">
-        <footer>
-        	<div id="credits">
-        		<p>Icons created by <a href="https://www.flaticon.com/fr/auteurs/retinaicons" title="Retinaicons" target='_blank'>Retinaicons</a> from <a href="https://www.flaticon.com/fr/" title="Flaticon" target='_blank'>www.flaticon.com</a></p>
-					</div>
-					<div id="infos">
-						<p>Contact: <span id="add">lenaig.cornanguer [at] irisa.fr</span></p>
-						<p>Last update: 2022-06-01</p>
-					</div>
-        </footer>
-    </div>
-	</body>
-</html>
