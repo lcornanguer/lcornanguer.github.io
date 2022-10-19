@@ -884,7 +884,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
   margin-bottom: 20px;
 }
 
-.tags_conf p {    
+.tags_conf .tags_invitedtalk p {    
     display: inline-block;
     height: 24px;
     line-height: 24px;
@@ -906,7 +906,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     font-weight: bold;
 }
 
-.tags_conf p:before {
+.tags_conf .tags_invitedtalk p:before {
     content: "";
     position: absolute;
     top:0;
@@ -933,7 +933,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     border-color: transparent #fac8d4 transparent transparent;
 }
 
-.tags_conf p:after {
+.tags_conf .tags_invitedtalk p:after {
     content: "";
     position: absolute;
     top: 10px;
@@ -948,7 +948,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
 }
 
-body[data-theme="dark"] .tags_conf p:after {
+body[data-theme="dark"] .tags_conf .tags_invitedtalk p:after {
     background: rgba(0,0,0,1);  
 }
 
