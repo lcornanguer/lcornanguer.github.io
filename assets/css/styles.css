@@ -884,7 +884,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
   margin-bottom: 20px;
 }
 
-.tags p {    
+.tags_conf .tags_invitedtalk p {    
     display: inline-block;
     height: 24px;
     line-height: 24px;
@@ -892,7 +892,6 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     margin: 0px 16px 8px 12px;
     padding: 0px 10px 0px 12px;
     vertical-align: middle;
-    background: #f5d98c;    
     -webkit-border-bottom-right-radius: 3px;    
     border-bottom-right-radius: 3px;
     -webkit-border-top-right-radius: 3px;    
@@ -906,18 +905,35 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     /*text-shadow: 0 1px 2px rgba(0,0,0,0.2);*/
     font-weight: bold;
 }
-.tags p:before {
+
+.tags_conf .tags_invitedtalk p:before {
     content: "";
     position: absolute;
     top:0;
     left: -12px;
     width: 0;
     height: 0;
-    border-color: transparent #f5d98c transparent transparent;
     border-style: solid;
     border-width: 12px 12px 12px 0;        
 }
-.tags p:after {
+
+.tags_conf p { 
+    background: #f5d98c;
+}
+
+.tags_invitedtalk p { 
+    background: #fac8d4;
+}
+
+.tags_conf p:before { 
+    border-color: transparent #f5d98c transparent transparent;
+}
+
+.tags_invitedtalk p:before { 
+    border-color: transparent #fac8d4 transparent transparent;
+}
+
+.tags_conf .tags_invitedtalk p:after {
     content: "";
     position: absolute;
     top: 10px;
