@@ -938,7 +938,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
 }
 
 .tags_workshoppaper p:before { 
-    border-color: transparent #9ac5ed transparent transparent;
+    border-color: transparent #c9e0f5 transparent transparent;
 }
 
 .tags_conf p:after, .tags_invitedtalk p:after, .tags_workshoppaper p:after {
