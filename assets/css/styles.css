@@ -884,7 +884,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
   margin-bottom: 20px;
 }
 
-.tags_conf p, .tags_invitedtalk p, .tags_workshoppaper p {    
+.tags_conf p, .tags_invitedtalk p, .tags_workshoppaper p, .tags_tuto p {    
     display: inline-block;
     height: 24px;
     line-height: 24px;
@@ -906,7 +906,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     font-weight: bold;
 }
 
-.tags_conf p:before, .tags_invitedtalk p:before, .tags_workshoppaper p:before {
+.tags_conf p:before, .tags_invitedtalk p:before, .tags_workshoppaper p:before, .tags_tuto p:before {
     content: "";
     position: absolute;
     top:0;
@@ -929,6 +929,10 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     background: #c9e0f5;
 }
 
+.tags_tuto p { 
+    background: #abdebc;
+}
+
 .tags_conf p:before { 
     border-color: transparent #f5d98c transparent transparent;
 }
@@ -937,11 +941,15 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     border-color: transparent #fac8d4 transparent transparent;
 }
 
+.tags_tuto p:before { 
+    border-color: transparent #abdebc transparent transparent;
+}
+
 .tags_workshoppaper p:before { 
     border-color: transparent #c9e0f5 transparent transparent;
 }
 
-.tags_conf p:after, .tags_invitedtalk p:after, .tags_workshoppaper p:after {
+.tags_conf p:after, .tags_invitedtalk p:after, .tags_workshoppaper p:after, .tags_tuto p:after {
     content: "";
     position: absolute;
     top: 10px;
@@ -956,7 +964,7 @@ body[data-theme="dark"] .charge_title, body[data-theme="dark"] .work_title, body
     box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
 }
 
-body[data-theme="dark"] .tags_conf p:after, body[data-theme="dark"] .tags_invitedtalk p:after, body[data-theme="dark"] .tags_workshoppaper p:after {
+body[data-theme="dark"] .tags_conf p:after, body[data-theme="dark"] .tags_invitedtalk p:after, body[data-theme="dark"] .tags_workshoppaper p:after, body[data-theme="dark"] .tags_tuto p:after {
     background: rgba(0,0,0,1);  
 }
 
@@ -971,6 +979,13 @@ body[data-theme="dark"] .tags_conf p:after, body[data-theme="dark"] .tags_invite
   content: "In ";
 }
 .publi_conf::after {
+  content: ".";
+}
+
+.publi_url::before {
+  content: "URL: ";
+}
+.publi_url::after {
   content: ".";
 }
 
