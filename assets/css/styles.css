@@ -983,12 +983,25 @@ body[data-theme="dark"] .tags_conf p:after, body[data-theme="dark"] .tags_invite
 }
 
 .publi_url::before {
-  content: "URL: ";
+  content: "Paper: ";
 }
 .publi_url::after {
   content: ".";
 }
 
+.publi_xpcode::before {
+  content: "Experiments: ";
+}
+.publi_xpcode::after {
+  content: ".";
+}
+
+.publi_software::before {
+  content: "Software: ";
+}
+.publi_software::after {
+  content: ".";
+}
 
 .publi_title, .edu_title, .teaching_title, .work_title, .charge_title {
   font-size: 18px;
